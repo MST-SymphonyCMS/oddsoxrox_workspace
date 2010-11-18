@@ -46,7 +46,7 @@
 		<xsl:call-template name="piwik-analytics">
 			<xsl:with-param name="piwik-url" select="'analytics.designermonkey.co.uk'" />
 			<xsl:with-param name="page-not-url" select="false()" />
-		<xsl:param name="site-id" select="2" />
+			<xsl:with-param name="site-id" select="2" />
 		</xsl:call-template>
 	</body>
 	</html>
