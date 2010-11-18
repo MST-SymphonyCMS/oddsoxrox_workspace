@@ -1,0 +1,140 @@
+/*	----------------------------------------------------------------------------
+	typo.css
+	--------
+	author:		John Porter
+	date:		7 September 2010
+	----------------------------------------------------------------------------
+	A grid system originally designed by Craig Zheng for publicculture.org and
+	symphony-cms.com.
+	Adapted by Stephen Bau for markuplibrary.org.
+	Adapted (again) by John Porter for a 12px measurement system.
+
+	This file contains the typography for use in the framework.
+	--------------------------------------------------------------------------*/
+body {
+	font: normal 12px Verdana, sans-serif;
+	line-height:1.5;
+	color: #333;
+}
+
+/*	----------------------------------------------------------------------------
+ 	anchors
+ 	------------------------------------------------------------------------- */
+a {
+	color: #677719;
+	text-decoration: none;
+	border-bottom:1px dashed #677719;
+}
+a:link, a:visited, a:active  {
+	color: #677719;
+	text-decoration: none;
+	border-bottom:1px dashed #dfe5cc;
+}
+a:hover,
+a.current,
+a.current:link,
+a.current:hover {
+	color: #677719;
+	text-decoration:none;
+	border-bottom:1px solid #677719;
+}
+
+/*	----------------------------------------------------------------------------
+ 	images
+	------------------------------------------------------------------------- */
+img {
+	border: none;
+	display: block;
+}
+
+/*	----------------------------------------------------------------------------
+	typography
+	------------------------------------------------------------------------- */
+h1 {/* 24px/36px */
+	font-size: 2em;
+	line-height:1.5em;
+	padding-bottom:0.25em;
+}
+h2 {/* 21px/24px */
+	font-size: 1.75em;
+	line-height:1.143em;
+	padding-bottom:0.286em;
+}
+h3 {/* 18px/24px */
+	font-size: 1.5em;
+	line-height:1.333em;
+	padding-bottom:0.333em;
+}
+h4 {/* 16px/24px */
+	font-size: 1.333em;
+	line-height:1.5em;
+	padding-bottom:0.375em;
+}
+h5 {/* 14px/24px */
+	font-size: 1.167em;
+	line-height:1.714em;
+	padding-bottom:0.429em;
+}
+h6 {/* 12px/24px */
+	font-size: 1em;
+	line-height:2em;
+	padding-bottom:0.5em;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom:0;
+	font-weight: bold;
+}
+p {
+	padding: 0.5em 0;
+}
+p.first{
+
+}
+p.last{
+
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+
+/*	----------------------------------------------------------------------------
+	tables
+	------------------------------------------------------------------------- */
+table {
+	width: 100%;
+	border-collapse:collapse;
+}
+th,td {
+	padding: 0.5em 1em;
+	background: #eee;
+	color: #666;
+	border: 0.083em solid #fff;
+	text-align: center;
+}
+th {
+	background: #ddd;
+	color: #444;
+	font-weight: bold;
+}
+
+/*	----------------------------------------------------------------------------
+	lists
+	------------------------------------------------------------------------- */
+ul li {
+	margin-left: 2em;
+	list-style-type: disc;
+}
+ol li {
+	margin-left: 2em;
+	list-style-type: decimal;
+}
+ul li li {
+	list-style-type: circle;
+}
+ul ul,
+ol ul {
+	margin-bottom: 0;
+}

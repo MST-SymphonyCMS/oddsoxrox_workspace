@@ -1,0 +1,95 @@
+/*	----------------------------------------------------------------------------
+	homepage.css
+	--------
+	author:		John Porter
+	date:		16 November 2010
+	--------------------------------------------------------------------------*/
+.page{
+	margin: 1.5em auto;
+}
+.logo{
+	position: absolute;
+	top: 16em;
+	height: 14em;
+}
+.social-media{
+	position:absolute;
+	top:30em;
+	height:14em;
+}
+.social-media ul {
+	text-align:right;
+	padding-top:3em;
+}
+.social-media li {
+	list-style-type:none;
+	padding-right: 1em;
+	height: 2em;
+	margin-bottom:0.5em;
+	margin-left:0;
+}
+.social-media a, .social-media a:link, .social-media a:hover, .social-media a:focus, .social-media a:active {
+	font-size:1.5em;
+	line-height:1.333em;
+	height:1.333em;
+	color:#333;
+	border:0;
+	text-align:right;
+	display:block;
+}
+.social-media span {
+	position:relative;
+	top:-1px;
+}
+.social-media img {
+	display:inline;
+	margin-left:0.667em;
+	vertical-align:middle;
+	position:relative;
+}
+.bubbles{
+	position:absolute;
+	top:0em;
+	height: 16em;
+	background: url(/workspace/assets/img/bubbles.png) 0 0 no-repeat;
+}
+.bubble{
+	position:relative;
+	height:40em;
+	background: url(/workspace/assets/img/bubble.jpg) 0 0 no-repeat;
+}
+.comments {
+	margin-right:8em;
+	margin-top:7em;
+	text-align:right;
+}
+.comment dt {
+	font-size:3em;
+	width:16.667em;
+	margin-left:0.667em;
+	line-height:0.4;
+}
+.comment dd {
+	font-size:1.167em;
+}
+.comment span {
+	font-size: 1.5em;
+}
+.copyright{
+	position:relative;
+	height:4em;
+}
+.copyright p{
+	text-align:right;
+	line-height:2em;
+	padding:1em;
+	height:2em;
+}
+.copyright span {
+	position:relative;
+	top:0.083em;
+}
+.copyright img {
+	display:inline;
+	vertical-align:middle;
+}

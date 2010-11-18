@@ -1,0 +1,69 @@
+/*	----------------------------------------------------------------------------
+	page.css
+	--------
+	author:		John Porter
+	date:		7 September 2010
+	----------------------------------------------------------------------------
+	A grid system originally designed by Craig Zheng for publicculture.org and
+	symphony-cms.com.
+	Adapted by Stephen Bau for markuplibrary.org.
+	Adapted (again) by John Porter for a 12px measurement system.
+
+	This file contains the page design classes and ids for the framework.
+	--------------------------------------------------------------------------*/
+body {
+	background:#dfe5cc;
+}
+.page{
+	margin: 0.5em auto;
+	background:#fff;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -khtml-border-radius: 1em;
+    border-radius: 1em;
+}
+
+/*	----------------------------------------------------------------------------
+ 	content divisions
+ 	-----------------
+ 	Content divisions are for use with 'area's of pages to apply specific
+ 	styling to those areas. You can define as many as needed, or remove these if
+ 	you don't need them.
+
+	------------------------------------------------------------------------- */
+.head {
+	position:absolute;
+	top:0;
+	left:0;
+	height:5em;
+}
+.body {
+	margin-top:5em;
+}
+.foot {
+	background:#edf5e6;
+	-webkit-border-bottom-right-radius: 1em;
+	-webkit-border-bottom-left-radius: 1em;
+	-moz-border-radius-bottomright: 1em;
+	-moz-border-radius-bottomleft: 1em;
+	border-bottom-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+}
+.main{
+
+}
+.sidebar{
+
+}
+.tools{
+	color:#677719;
+	height:3em;
+}
+.tools li {
+	height:3em;
+	line-height:3;
+	margin-left: 0;
+	list-style-type: none;
+	float:left;
+	padding:0 1em;
+}

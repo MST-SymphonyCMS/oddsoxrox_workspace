@@ -1,0 +1,208 @@
+/*	----------------------------------------------------------------------------
+	grid.css
+	--------
+	author:		John Porter
+	date:		5 September 2010
+	----------------------------------------------------------------------------
+	A grid system originally designed by Craig Zheng for publicculture.org and
+	symphony-cms.com.
+	Adapted by Stephen Bau for markuplibrary.org.
+	Adapted (again) by John Porter for a 12px measurement system.
+
+	This file contains the grid layout classes for use in the framework.
+	--------------------------------------------------------------------------*/
+body {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+.debug {
+	border: 1px solid #f00;
+	margin: -1px;
+	position: relative;
+	z-index: 100;
+}
+
+/*	----------------------------------------------------------------------------
+ 	layout classes
+	--------------
+	page - The page is the main wrapper for all of the content. It specifies the
+	full width of the content, also centering it in the browser.
+
+	section - This specifies an 'section' of content within the page, i.e. if
+	your page is split into header, body, and footer, you would have three
+	sections of content.
+	(clearfix - clearfix is a method of clearing floats, also standard on
+	'section')
+
+	column - Most modern sites use columns for content layout like magazines.
+	The column class is the precursor for the column classes. All columns are
+	left floated by default.
+
+	right - For use with the column class to specify right floated columns.
+
+ 	block - Defines a block of content, seperated by margins, which will
+ 	therefore use the collapsing margins feature of CSS.
+
+ 	unit - Defines a unit of content, similar to 'block', but using padding
+ 	instead of margins to avoid the collapsing margins feature of CSS.
+
+ 	box, bot, bor, bob, bol - Define borders respectively and will apply padding
+ 	also. Best to be used only on 'unit'.
+
+ 	gap - Used with 'unit' to force a gap under the 'unit'.
+
+	------------------------------------------------------------------------- */
+.page{
+	width:80em;			/* 960px - 4col/3col (thirds) */
+	position:relative;
+	background:#fff;
+}
+.section {
+	overflow: hidden;
+	clear: both;
+}
+.clearfix:after, .section:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix, .section {
+	display: inline-block;
+}
+html[xmlns] .clearfix, html[xmlns] .section {
+	display: block;
+}
+* html .clearfix, * html .section {
+	height: 1%;
+}
+
+.column{
+	float: left;
+	width: 100%;
+}
+.right{
+	float: right;
+}
+.block {
+	margin:1em;
+}
+.unit {
+	padding:1em;
+}
+.box {
+	padding:0.917em;
+	border:0.083em solid #999;
+}
+.bot{
+	padding-top:0.917em;
+	border-top:0.083em solid #999;
+}
+.bor{
+	padding-right:0.917em;
+	border-right:0.083em solid #999;
+}
+.bob{
+	padding-bottom:0.917em;
+	border-bottom:0.083em solid #999;
+}
+.bol{
+	padding-left:0.917em;
+	border-left:0.083em solid #999;
+}
+.gap{
+	margin-bottom:1em;
+}
+
+/*	----------------------------------------------------------------------------
+ 	three columns
+ 	-------------
+ 	thirds - Appending this to the div with class 'area' will switch into three
+ 	column layout mode for that div's content.
+
+	--------------------------------------------------------------------------*/
+.thirds .fragment {
+	width: 13.333em;	/* 160px - 0.5col */
+}
+.thirds .simple {
+	width: 26.667em;	/* 320px - 1col */
+}
+.thirds .compound {
+	width: 53.333em;	/* 640px - 2col */
+}
+.thirds .complex {		/* Shouldn't need to use this one! */
+	width: 53.333em;	/* 640px - 3col */
+}
+.thirds .overcomplex {	/* Shouldn't need to use this one! */
+	width: 53.333em;	/* 640px - 3col */
+}
+
+/*	----------------------------------------------------------------------------
+ 	four columns (Default)
+ 	------------
+ 	fragment - Half of a defined column width
+
+	simple - Defines 1 column width
+
+	compound - Defines a double width column
+
+	complex - Defines a triple width column, in 'fourths', but is limited to
+	'compound' in 'thirds'
+
+	overcomplex - Defines a quadruple width column, in 'fifths', but is limited
+	to 'complex' in 'fourths', and 'compound' in 'thirds'
+
+	--------------------------------------------------------------------------*/
+.fragment {
+	width: 10em;		/* 120px - 0.5col */
+}
+.simple {
+	width: 20em;		/* 240px - 1col */
+}
+.compound {
+	width: 40em;		/* 480px - 2col */
+}
+.complex {
+	width: 60em;		/* 720px - 3col */
+}
+.overcomplex {
+	width: 60em;		/* 720px - 3col */
+}
+
+/*	----------------------------------------------------------------------------
+ 	five columns
+ 	------------
+ 	fifths - Appending this to the div with class 'area' will switch into five
+ 	column layout mode for that div's content.
+
+	--------------------------------------------------------------------------*/
+.fifths .fragment {
+	width: 8em;			/* 96px - 0.5col */
+}
+.fifths .simple {
+	width: 16em;		/* 192px - 1col */
+}
+.fifths .compound {
+	width: 32em;		/* 384px - 2col */
+}
+.fifths .complex {
+	width: 48em;		/* 576px - 3col */
+}
+.fifths .overcomplex {
+	width: 64em;		/* 768px - 4col */
+}
+
+/*	----------------------------------------------------------------------------
+ 	screen readers
+ 	--------------
+ 	audible - Applying this class will visually hide content from the viewer,
+ 	but leave it available for screen readers.
+------------------------------------------------------------------------------*/
+.audible{
+	visibility:hidden;
+	height:0;
+	width:0;
+}
