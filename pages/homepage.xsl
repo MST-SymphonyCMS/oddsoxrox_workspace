@@ -44,9 +44,10 @@
 			<xsl:apply-templates />
 		</div>
 		<xsl:call-template name="piwik-analytics">
-			<xsl:with-param name="piwik-url" select="'analytics.designermonkey.co.uk'" />
+			<xsl:with-param name="piwik-url" select="'analytics.designermonkey.co.uk/'" />
 			<xsl:with-param name="page-not-url" select="false()" />
 			<xsl:with-param name="site-id" select="2" />
+			<xsl:with-param name="link-class" select="'external'" />
 		</xsl:call-template>
 	</body>
 	</html>
@@ -102,7 +103,7 @@
 	</div>
 </xsl:template>
 <xsl:template match="social-media-links/entry">
-	<li><a href="{url/text()}" title="{link-title-text/text()}"><span><xsl:value-of select="link-text" /></span> <img class="social-media-image" src="{$workspace}{logo/item/logo/@path}/{logo/item/logo/filename/text()}" alt="{}logo/item/alt-tag/text()" /></a></li>
+	<li><a href="{url/text()}" title="{link-title-text/text()}" class="external"><span><xsl:value-of select="link-text" /></span> <img class="social-media-image" src="{$workspace}{logo/item/logo/@path}/{logo/item/logo/filename/text()}" alt="{}logo/item/alt-tag/text()" /></a></li>
 </xsl:template>
 
 <xsl:template match="comments">
